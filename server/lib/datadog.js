@@ -14,11 +14,11 @@ function DataDog(server, apiKey, customTags) {
 
   config.apiKey = apiKey;
 
-  if (server === "US") {
-    config.host = "intake.logs.datadoghq.com";
+  if (server === 'US') {
+    config.host = 'intake.logs.datadoghq.com';
     config.port = 10516;
   } else {
-    config.host = "tcp-intake.logs.datadoghq.eu";
+    config.host = 'tcp-intake.logs.datadoghq.eu';
     config.port = 443;
   }
 

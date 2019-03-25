@@ -5,7 +5,7 @@ const metadata = {
   ddsource: 'auth0'
 };
 
-config = {}
+const config = {};
 
 function DataDog(server, apiKey, customTags) {
   if (!apiKey) {

@@ -13,7 +13,7 @@ function DataDog(server, apiKey, customTags) {
   config = {
     apiKey: apiKey,
     host: server,
-    port: 10516
+    port: 443
   };
 
   if (customTags) {

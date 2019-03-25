@@ -69,7 +69,7 @@
           "text": "US"
         },
         {
-          "value": "intake.logs.datadoghq.eu",
+          "value": "tcp-intake.logs.datadoghq.eu",
           "text": "EU"
         }
       ]

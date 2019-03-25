@@ -4,7 +4,7 @@ This extension will take all of your Auth0 logs and export them to [DataDog](htt
 
 Full credits to https://github.com/BetaProjectWave/auth0-logs-to-datadog
 
-The only change I've made was to set server to datadoghq.eu.
+The only change I've made was to set server to be an option: US or EU server.
 
 ## Installation
 

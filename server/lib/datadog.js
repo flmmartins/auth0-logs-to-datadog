@@ -1,21 +1,20 @@
 const tls = require('tls');
 
-const config = {
-  host: 'intake.logs.datadoghq.eu',
-  port: 10516
-};
-
 const metadata = {
   ddsourcecategory: 'external',
   ddsource: 'auth0'
 };
 
-function DataDog(apiKey, customTags) {
+function DataDog(server, apiKey, customTags) {
   if (!apiKey) {
     throw new Error('API Key is required for DataDog.');
   }
 
-  config.apiKey = apiKey;
+  config = {
+    apiKey: apiKey,
+    host: server,
+    port: 10516
+  };
 
   if (customTags) {
     const matchedTags = customTags.match(/([^:|^,\W]+):([^,|^\W]+)/g);

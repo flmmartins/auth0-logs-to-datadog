@@ -1,7 +1,7 @@
 const tls = require('tls');
 
 const config = {
-  host: 'intake.logs.datadoghq.com',
+  host: 'intake.logs.datadoghq.eu',
   port: 10516
 };
 

@@ -65,11 +65,11 @@
       "default": "intake.logs.datadoghq.com",
       "options": [
         {
-          "value": "intake.logs.datadoghq.com",
+          "value": "US",
           "text": "US"
         },
         {
-          "value": "tcp-intake.logs.datadoghq.eu",
+          "value": "EU",
           "text": "EU"
         }
       ]

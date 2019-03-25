@@ -5,16 +5,22 @@ const metadata = {
   ddsource: 'auth0'
 };
 
+config = {}
+
 function DataDog(server, apiKey, customTags) {
   if (!apiKey) {
     throw new Error('API Key is required for DataDog.');
   }
 
-  config = {
-    apiKey: apiKey,
-    host: server,
-    port: 443
-  };
+  config.apiKey = apiKey;
+
+  if (server === "US") {
+    config.host = "intake.logs.datadoghq.com";
+    config.port = 10516;
+  } else {
+    config.host = "tcp-intake.logs.datadoghq.eu";
+    config.port = 443;
+  }
 
   if (customTags) {
     const matchedTags = customTags.match(/([^:|^,\W]+):([^,|^\W]+)/g);

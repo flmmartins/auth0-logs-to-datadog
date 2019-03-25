@@ -1,4 +1,4 @@
-# Auth0 - Logs to DataDog to DatadogEU
+# Auth0 - Logs to DatadogEU
 
 This extension will take all of your Auth0 logs and export them to [DataDog](https://www.datadoghq.com).
 
